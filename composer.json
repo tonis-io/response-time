@@ -1,0 +1,36 @@
+{
+    "name": "tonis/response-time",
+    "authors": [
+        {
+            "name": "Kyle Spraggs",
+            "email": "theman@spiffyjr.me"
+        }
+    ],
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.0",
+        "squizlabs/php_codesniffer": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tonis\\ResponseTime\\": [
+                "src/"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tonis\\ResponseTime\\": [
+                "test/"
+            ]
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
