@@ -1,10 +1,10 @@
 <?php
-namespace Tonis\ResponseTime;
+namespace Tonis;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-final class Middleware
+final class ResponseTime
 {
     /** @var array */
     private $config;

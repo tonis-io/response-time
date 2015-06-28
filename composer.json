@@ -12,18 +12,19 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^4.0",
-        "squizlabs/php_codesniffer": "^1.0"
+        "squizlabs/php_codesniffer": "^2.0",
+        "zendframework/zend-diactoros": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "Tonis\\ResponseTime\\": [
+            "Tonis\\": [
                 "src/"
             ]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tonis\\ResponseTime\\": [
+            "Tonis\\": [
                 "test/"
             ]
         }
