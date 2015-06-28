@@ -18,4 +18,6 @@ Configuration
 
 `Tonis\ResponseTime\Middleware` optionally takes an array of options.
 
-
+digits: the number of digits to have in the response (default: 3)
+header: the header to use (default: X-Response-Time)
+suffix: include suffix output (default: true)
