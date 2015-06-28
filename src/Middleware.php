@@ -28,9 +28,16 @@ final class Middleware
         $this->config = array_merge($defaults, $config);
     }
 
+    /**
+     * @param ServerRequestInterface $request
+     * @param ResponseInterface $response
+     * @param callable $next
+     * @return ResponseInterface
+     */
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response, callable $next = null)
     {
-        $server = $request->getServerParams();
+        $server   = $request->getServerParams();
+        $response = $next ? $next($request, $response) : $response;
 
         if (isset($server['REQUEST_TIME_FLOAT'])) {
             $ms   = (microtime(true) - $server['REQUEST_TIME_FLOAT']) * 1000;
@@ -38,8 +45,6 @@ final class Middleware
         } else {
             $time = 'Unavailable';
         }
-
-        $response = $next ? $next($request, $response) : $response;
 
         return $response->withHeader($this->config['header'], $time);
     }
