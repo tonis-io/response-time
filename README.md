@@ -17,7 +17,9 @@ Usage
 -----
 
 ```php
-$app->add(new \Tonis\ResponseTime\Middleware)
+$responseTime = new \Tonis\ResponseTime;
+
+// add $responseTime to your middleware queue
 ```
 
 Configuration
