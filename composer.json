@@ -18,14 +18,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Tonis\\": [
+            "Tonis\\ResponseTime\\": [
                 "src/"
             ]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tonis\\": [
+            "Tonis\\ResponseTime\\": [
                 "test/"
             ]
         }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonis;
+namespace Tonis\ResponseTime;
 
 use Zend\Diactoros\Response;
 use Zend\Diactoros\ServerRequestFactory;
