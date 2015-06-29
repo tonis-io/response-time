@@ -6,7 +6,7 @@ use Zend\Diactoros\Response;
 use Zend\Diactoros\ServerRequestFactory;
 
 /**
- * @covers \Tonis\ResponseTime
+ * @covers \Tonis\ResponseTime\ResponseTime
  */
 class ResponseTimeTest extends \PHPUnit_Framework_TestCase
 {
