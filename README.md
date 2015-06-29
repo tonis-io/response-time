@@ -6,6 +6,13 @@
 
 Tonis\ResponseTime is simple middleware that adds a `X-Response-Time` header to responses.
 
+Composer
+--------
+
+```
+composer require tonis-io/response-time
+```
+
 Usage
 -----
 
